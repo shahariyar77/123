@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,900&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    
+}
+h1,h2,h3,h4,h5,h6{ 
+    font-family: 'Poppins', sans-serif;
+}
+
+.portfulio-bg-1{
+    background-image: url(img/6757298.png);
+}.portfulio-bg-2{
+    background-image: url(img/car1.jpg);
+}.portfulio-bg-3{
+    background-image: url(img/car1.jpg);
+}.portfulio-bg-4{
+    background-image: url(img/img-2.jpg);
+}.portfulio-bg-5{
+    background-image: url(img/img-3.jpg);
+}.portfulio-bg-6{
+    background-image: url(img/img-4.jpg);
+}.portfulio-bg-7{
+    background-image: url(img/Lamborghini-Egoista-LF-3-4-HERO.jpg);
+}.portfulio-bg-8{
+    background-image: url(img/tailor1.png);
+}.portfulio-bg-9{
+    background-image: url(img/tailor2.png);
+}.portfulio-bg-10{
+    background-image: url(img/tailor3.png);
+}.portfulio-bg-11{
+    background-image: url(img/images.jpg);
+}
+/*========================   Nav manu ==================*/
+
+.logo a {
+  color: gray;
+  display: block;
+}
+.logo h1 {
+  display: inline-block;
+  font-size: 22px;
+  margin: 0;
+  font-weight: 900;
+  font-family: mulis;
+  text-transform: uppercase;
+  position: relative;
+}
+.logo h1 span {
+  position: absolute;
+  right: -14px;
+  top: 3px;
+  font-size: 10px;
+}
+.manu-triger{
+    cursor: pointer;
+}
+.manu-triger span {
+  background:gray;
+  height: 2px;
+  display: block;
+  transition: .2s;
+}
+.manu-triger span:nth-child(2) {
+  margin: 7px 0;
+}
+.manu-triger {
+  width: 30px;
+  display: inline-block;
+}
+.manu-triger:hover span:nth-child(1), .manu-triger:hover span:nth-child(3) {
+  margin: 0 5px;
+}
+.header-area {
+  padding: 40px 30px;
+}
+.single-portfulio-item {
+  float: left;
+  width: 25%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  display: table;
+  background-color: #ddd;
+  transition: .5s;
+}
+.portfulio-hover {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.portfulio-hover a {
+  color: #000;
+}
+.portfulio-hover h2 {
+  font-size: 24px;
+}
+.portfulio-hover p {
+  font-size: 12px;
+  opacity: .5;
+  text-transform: uppercase;
+}
+.portfulio-hover p:hover {
+  opacity: 1;
+}
+.single-portfulio-item:hover .portfulio-hover {
+  opacity: 1;
+  visibility: visible;
+}
+.single-portfulio-item:hover {
+  background-size: 120%;
+}
+
+.single-portfulio-item.long {
+  height: 660px;
+}
+.single-portfulio-item.boxed {
+  height: 660px;
+  width: 50%;
+}
+.portfulio-list {
+  overflow: hidden;
+}
+
+.footer-area {
+  background-color: #613ad6;
+  font-size: 18px;
+  line-height: 2;
+  padding: 70px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+.footer-area.footer-area a {
+  color: #fff;
+}
+.wiget {
+  color: #fff;
+  opacity: .7;
+}
+.footer-logo {
+  font-size: 22px;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+}
+.footer-logo span {
+  font-size: 10px;
+  position: absolute;
+  top: 2px;
+  right: -12px;
+}
+.footer-area h2 {
+  font-size: 22px;
+}
+.footer-area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.portfulio-list {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 261px;
+}
+.header-area {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+a:hover {
+  text-decoration: none;
+}
+/*============ offcanvas manu =========*/
+
+.offcanvas-manu {
+	position: fixed;
+	right: -40%;
+	top: 0;
+	height: 100%;
+	width: 40%;
+	z-index: 99;
+	background: #fff;
+	padding: 40px;
+	transition: .4s;
+}
+.offcanvas-manu.active {
+	right: 0;
+}
+.offcanvas-box-text {
+  background: #efebff;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.social-icon a {
+  color: #b6b3c1;
+  font-size: 24px;
+  display: inline-block;
+  padding-right: 10px;
+}
+.social-icon {
+  margin-top: 18px;
+}
+.manu-bottom-section {
+  position: absolute;
+  bottom: 80px;
+  left: 60px;
+  max-width: 305px;
+}
+.offcanvas-manu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-left: 20px;
+}
+.offcanvas-manu li a {
+  color: #100060;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+}
+
+.manu-item-warp {
+  height: 100%;
+  display: table;
+  width: 100%;
+}
+.manu-item-inner {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 210px;
+}
+
+.manu-close {
+  position: absolute;
+  right: 0;
+  border-left: 1px solid#e4e4e4;
+  width: 70px;
+  height: 100%;
+  top: 0;
+}
+.manu-close i.fas {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  top: 50%;
+  line-height: 40px;
+  margin-top: -20px;
+  cursor: pointer;
+}
+
+.offcanvas-manu-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  background: #000;
+  z-index: 3;
+  opacity: 0;
+  visibility: hidden;
+}
+.offcanvas-manu-overlay.active{
+    opacity:.4;
+    visibility: visible;
+}
+.header-area.headroom--pinned {
+	position: fixed;
+}
